@@ -1,3 +1,5 @@
+package aplana.course.java.array;
+
 import java.util.Random;
 
 /**
@@ -5,7 +7,7 @@ import java.util.Random;
  * Найти максимальный отрицательный и минимальный положительный элементы массива.
  * Поменять их местами.
  */
-public class Main {
+public class Array {
     public static final int ARRAY_LENGTH = 20;
     public static void main(String[] args) {
         int indexMaxNegative, indexMinPositive;
