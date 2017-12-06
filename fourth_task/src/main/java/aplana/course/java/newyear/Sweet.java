@@ -2,12 +2,18 @@ package aplana.course.java.newyear;
 
 
 /**
- * abstract class for gifts
+ * abstract class for sweets
  */
-public abstract class Gift {
+public abstract class Sweet {
     private String name;
-    private float weight;
+    private double weight;
     private float cost;
+
+    public Sweet(String name, double weight, float cost) {
+        setName(name);
+        setWeight(weight);
+        setCost(cost);
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -17,11 +23,11 @@ public abstract class Gift {
         return name;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
 
@@ -33,4 +39,7 @@ public abstract class Gift {
     public float getCost() {
         return cost;
     }
+
+    @Override
+    public abstract String toString();
 }
